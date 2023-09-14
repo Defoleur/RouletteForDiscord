@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using DiscordBot.Casino;
 
 namespace DiscordBot.DB.Repositories;
