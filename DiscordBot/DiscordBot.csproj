@@ -1,0 +1,188 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Discord.Addons.Hosting" Version="5.2.0" />
+      <PackageReference Include="Discord.Net" Version="3.11.0" />
+      <PackageReference Include="EntityFramework" Version="6.4.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.10" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0-preview.7.23375.6" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0-preview.7.23375.6" />
+      <PackageReference Include="Opus" Version="1.0.0" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="3.0.1" />
+      <PackageReference Include="SQLite" Version="3.13.0" />
+      <PackageReference Include="SQLitePCL" Version="3.8.7.2" />
+      <PackageReference Include="SQLitePCLRaw.core" Version="2.1.6-pre20230809203314" />
+      <PackageReference Include="System.Drawing.Common" Version="8.0.0-preview.5.23280.5" />
+      <PackageReference Include="Victoria" Version="6.0.1026" />
+    </ItemGroup>
+    <ItemGroup>
+        <RuntimeHostConfigurationOption Include="System.Drawing.EnableUnixSupport" Value="true" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Resources\rules.txt" />
+      <EmbeddedResource Include="Resources\rules.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\board.png" />
+      <EmbeddedResource Include="Resources\board.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\20.gif" />
+      <EmbeddedResource Include="Resources\Gifs\20.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\14.gif" />
+      <EmbeddedResource Include="Resources\Gifs\14.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\18.gif" />
+      <EmbeddedResource Include="Resources\Gifs\18.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\12.gif" />
+      <EmbeddedResource Include="Resources\Gifs\12.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\19.gif" />
+      <EmbeddedResource Include="Resources\Gifs\19.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\10.gif" />
+      <EmbeddedResource Include="Resources\Gifs\10.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\16.gif" />
+      <EmbeddedResource Include="Resources\Gifs\16.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\13.gif" />
+      <EmbeddedResource Include="Resources\Gifs\13.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\17.gif" />
+      <EmbeddedResource Include="Resources\Gifs\17.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\1.gif" />
+      <EmbeddedResource Include="Resources\Gifs\1.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\3.gif" />
+      <EmbeddedResource Include="Resources\Gifs\3.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\11.gif" />
+      <EmbeddedResource Include="Resources\Gifs\11.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\30.gif" />
+      <EmbeddedResource Include="Resources\Gifs\30.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\15.gif" />
+      <EmbeddedResource Include="Resources\Gifs\15.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\0.gif" />
+      <EmbeddedResource Include="Resources\Gifs\0.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\6.gif" />
+      <EmbeddedResource Include="Resources\Gifs\6.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\7.gif" />
+      <EmbeddedResource Include="Resources\Gifs\7.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\4.gif" />
+      <EmbeddedResource Include="Resources\Gifs\4.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\5.gif" />
+      <EmbeddedResource Include="Resources\Gifs\5.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\8.gif" />
+      <EmbeddedResource Include="Resources\Gifs\8.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\9.gif" />
+      <EmbeddedResource Include="Resources\Gifs\9.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\2.gif" />
+      <EmbeddedResource Include="Resources\Gifs\2.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\21.gif" />
+      <EmbeddedResource Include="Resources\Gifs\21.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\24.gif" />
+      <EmbeddedResource Include="Resources\Gifs\24.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\25.gif" />
+      <EmbeddedResource Include="Resources\Gifs\25.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\22.gif" />
+      <EmbeddedResource Include="Resources\Gifs\22.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\23.gif" />
+      <EmbeddedResource Include="Resources\Gifs\23.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\28.gif" />
+      <EmbeddedResource Include="Resources\Gifs\28.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\29.gif" />
+      <EmbeddedResource Include="Resources\Gifs\29.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\26.gif" />
+      <EmbeddedResource Include="Resources\Gifs\26.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\27.gif" />
+      <EmbeddedResource Include="Resources\Gifs\27.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\31.gif" />
+      <EmbeddedResource Include="Resources\Gifs\31.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\32.gif" />
+      <EmbeddedResource Include="Resources\Gifs\32.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\34.gif" />
+      <EmbeddedResource Include="Resources\Gifs\34.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\33.gif" />
+      <EmbeddedResource Include="Resources\Gifs\33.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\35.gif" />
+      <EmbeddedResource Include="Resources\Gifs\35.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\Gifs\36.gif" />
+      <EmbeddedResource Include="Resources\Gifs\36.gif">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+    
+</Project>
